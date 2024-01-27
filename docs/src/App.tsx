@@ -1,16 +1,13 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
 import './App.css';
-// import Button from '@darwish-ui/button';
-import Button from '../../components/Button';
+import Button from '@darwish-ui/button';
 function App() {
-	const [count, setCount] = useState(0);
-
+	const handleClick = () => {
+		alert('Hello world!');
+	}
 	return (
-		<>
-			<Button />
-		</>
+		<div className="h-screen flex justify-center items-center bg-red-400">
+			<Button onClick={handleClick}>Click me</Button>
+		</div>
 	);
 }
 
