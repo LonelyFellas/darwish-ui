@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dar-button-base {
+   @apply text-green-500 px-2 py-1 bg-red-500i;
+}

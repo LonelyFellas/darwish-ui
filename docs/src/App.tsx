@@ -5,8 +5,9 @@ function App() {
 		alert('Hello world!');
 	}
 	return (
-		<div className="h-screen flex justify-center items-center bg-red-400">
+		<div className="h-screen flex justify-center items-center">
 			<Button onClick={handleClick}>Click me</Button>
+			<button className="button-base">Click me</button>
 		</div>
 	);
 }
