@@ -4,16 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7aa437c-f7e2-482d-9ef4-3cd993933bc3" name="Changes" comment="feat: test button">
-      <change afterPath="$PROJECT_DIR$/components/Button/src/index.css" afterDir="false" />
+    <list default="true" id="d7aa437c-f7e2-482d-9ef4-3cd993933bc3" name="Changes" comment="feat: Tailwind CSS can be used normally within components.&quot;">
+      <change afterPath="$PROJECT_DIR$/components/Button/hook/useCn.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Button/src/index.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Button/postcss.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Button/src/index.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Button/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Button/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Button/tailwind.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.eslintrc.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.eslintrc.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/postcss.config.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tailwind.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/docs/vite.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,6 +59,8 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "pnpm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/worksapce/Dev/darwish-ui/node_modules/prettier",
+    "settings.editor.selected.configurable": "actions.on.save",
     "ts.external.directory.path": "/Users/worksapce/Dev/darwish-ui/node_modules/typescript/lib"
   }
 }]]></component>
@@ -95,7 +112,7 @@
       <updated>1706344974637</updated>
       <workItem from="1706344975453" duration="1179000" />
       <workItem from="1706346158142" duration="2532000" />
-      <workItem from="1706349023915" duration="2145000" />
+      <workItem from="1706349023915" duration="16096000" />
     </task>
     <task id="LOCAL-00001" summary="feat: test button">
       <option name="closed" value="true" />
@@ -105,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706350374781</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: Tailwind CSS can be used normally within components.&quot;">
+      <option name="closed" value="true" />
+      <created>1706351468126</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706351468126</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +149,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: test button" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: test button" />
+    <MESSAGE value="feat: Tailwind CSS can be used normally within components.&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Tailwind CSS can be used normally within components.&quot;" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/docs/vite.config.ts</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
