@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7aa437c-f7e2-482d-9ef4-3cd993933bc3" name="Changes" comment="feat: The variant property of the button component is constructed">
+      <change afterPath="$PROJECT_DIR$/components/Button/src/stylex.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Button/src/type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Button/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/Button/src/index.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Button/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Button/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,29 +32,33 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2bWy8psuXmBmYVaLpbvft9Fchcq" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/worksapce/Dev/darwish-ui/components/Button&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;pnpm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/worksapce/Dev/darwish-ui/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/worksapce/Dev/darwish-ui/node_modules/typescript/lib&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/worksapce/Dev/darwish-ui/components/Button/src",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "pnpm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/worksapce/Dev/darwish-ui/node_modules/prettier",
+    "settings.editor.selected.configurable": "actions.on.save",
+    "ts.external.directory.path": "/Users/worksapce/Dev/darwish-ui/node_modules/typescript/lib"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components/Button/src" />
       <recent name="$PROJECT_DIR$/components/Button" />
       <recent name="$PROJECT_DIR$/docs" />
       <recent name="$PROJECT_DIR$/docs/src" />
@@ -98,7 +106,7 @@
       <workItem from="1706344975453" duration="1179000" />
       <workItem from="1706346158142" duration="2532000" />
       <workItem from="1706349023915" duration="16096000" />
-      <workItem from="1706751857597" duration="468000" />
+      <workItem from="1706751857597" duration="4874000" />
     </task>
     <task id="LOCAL-00001" summary="feat: test button">
       <option name="closed" value="true" />
@@ -124,7 +132,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706752317156</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: The variant property of the button component is constructed">
+      <option name="closed" value="true" />
+      <created>1706752335156</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1706752335156</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
