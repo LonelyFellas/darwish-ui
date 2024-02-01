@@ -1,78 +1,81 @@
 import * as stylex from '@stylexjs/stylex';
-import Style from './index.module.css';
+import Style from './index.cssi';
 import useCn from '../hook/useCn';
 
-interface ButtonProps
+export interface ButtonProps
 	extends React.DetailedHTMLProps<
 		Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, 'type'>,
 		HTMLButtonElement
 	> {
 	children: React.ReactNode;
-	type?: 'primary' | 'secondary' | 'link' | 'base';
+	variant?: 'text' | 'contained' | 'outlined';
+	href?: string;
 }
 
+const COLOR = `rgb(25, 118, 210)`;
 const styles = stylex.create({
-	base: {
+	text: {
 		backgroundColor: {
-			default: '#fff',
-			":hover": '#F9FAFB',
+			default: 'transparent',
+			':hover': 'rgba(25, 118, 210, 0.04)'
 		},
-		border: 0,
-		borderRadius: '.5rem',
-		color: '#111827',
-    fontFamily: '"Inter var", ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
-		fontSize: '.875rem',
-		lineHeight: '1.25rem',
-		padding: '.75rem 1rem',
-		textAlign: 'center',
-		textDecoration: 'none #D1D5DB solid',
-		textDecorationThickness: 'auto',
+		color: COLOR,
+		textDecoration: 'none',
+		transition:
+			'background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms'
+	},
+	contained: {
 		boxShadow: {
-			default: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
-			":focus-visible": 'none',
+			default:
+				'0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12)',
+			':hover':
+				'0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12)'
 		},
-		cursor: 'pointer',
-		userSelect: 'none',
-		touchAction: 'manipulation',
-		transitionProperty: 'background-color, border-color, color,box-shadow',
-		transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)',
-		transitionDuration: '300ms',
-		":hover": {
-			outline: "2px solid transparent",
-			outlineOffset: '2px'
-		}
-		
-	},
-	primary: {
 		backgroundColor: {
-			default: '#5E5DF0',
-			":hover": '#4C4BF9',
+			default: COLOR,
+			':hover': '#1565c0'
 		},
-		color: '#fff',
+		transition:
+			'background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms',
+		outline: 'none',
+		color: '#fff'
 	},
-	secondary: {
-		color: 'green'
+	outlined: {
+		backgroundColor: {
+			default: 'transparent',
+			':hover': 'rgba(25, 118, 210, 0.04)'
+		},
+		transition:
+			'background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms',
+		color: COLOR,
+		border: {
+			default: '1px solid rgba(25, 118, 210, 0.5)',
+			':hover': '1px solid #1976d2'
+		}
 	},
-	link: {
-		color: 'yellow'
+	disabled: {
+		color: 'rgba(0, 0, 0, 0.26)',
+		pointerEvents: 'none',
+		cursor: 'default'
 	}
 });
 
-export default function Button(props: ButtonProps) {
-	const { type = 'base', children, ...restProps } = props;
-	let computedStyle: keyof typeof styles = 'base';
-	if (type === 'primary') {
-		computedStyle = 'primary';
-	} else if (type === 'secondary') {
-		computedStyle = 'secondary';
-	} else if (type === 'link') {
-		computedStyle = 'link';
-	}
+export default function Button<T = null>(props: ButtonProps) {
+	const { variant = 'text', disabled, href, children, ...restProps } = props;
 
-	const classNames = useCn(Style.dar_button, [styles.base, styles[computedStyle]]);
+	const classNames = useCn(Style.dar_button, [styles[variant], disabled ? styles.disabled : '']);
+
+	const Component = href ? 'a' : 'button';
+
+	const cmpProps = {
+		...(href ? { href } : {}),
+		...(disabled ? { disabled } : {})
+	};
+	console.log(cmpProps);
+
 	return (
-		<button {...restProps} {...classNames}>
+		<Component {...classNames} {...cmpProps} {...restProps}>
 			{children}
-		</button>
+		</Component>
 	);
 }

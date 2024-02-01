@@ -5,12 +5,15 @@ import * as stylex from '@stylexjs/stylex';
 const styles = stylex.create({
 	base: {
 		minHeight: '100vh',
-		display: 'grid',
-		placeItems: 'center',
-		backgroundColor: 'gray'
-		// fontSize: 26,
-		// lineHeight: 1.5,
-		// color: 'grey',
+		display: 'flex',
+		flexDirection: 'column',
+		justifyContent: 'center',
+		alignItems: 'center',
+		backgroundColor: '#fff'
+	},
+	flexGap: {
+		display: 'flex',
+		columnGap: '10px'
 	}
 });
 
@@ -20,7 +23,26 @@ function App() {
 	};
 	return (
 		<div {...stylex.props(styles.base)}>
-			<Button onClick={handleClick} type="primary">Click me</Button>
+			<div {...stylex.props(styles.flexGap)}>
+				<Button onClick={handleClick}>Click me</Button>
+				<Button onClick={handleClick} variant="text">
+					Click me
+				</Button>
+				<Button onClick={handleClick} variant="contained">
+					Click me
+				</Button>
+				<Button onClick={handleClick} variant="outlined">
+					Click me
+				</Button>
+			</div>
+			<div {...stylex.props(styles.flexGap)}>
+				<Button onClick={handleClick} disabled>
+					Click me
+				</Button>
+				<Button onClick={handleClick} href="#text-buttons">
+					Click me
+				</Button>
+			</div>
 		</div>
 	);
 }

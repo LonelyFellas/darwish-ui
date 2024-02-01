@@ -1,0 +1,21 @@
+.dar_button {
+    all: unset;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    user-select: none;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    min-width: 64px;
+    padding: 6px 16px;
+    border-radius: 4px;
+	font-family: '"Roboto","Helvetica","Arial",sans-serif';
+    vertical-align: middle;
+    -webkit-appearance: none;
+}
+
