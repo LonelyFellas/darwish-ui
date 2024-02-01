@@ -1,5 +1,5 @@
 import * as stylex from '@stylexjs/stylex';
-import Style from './index.cssi';
+import Style from './index.css';
 import useCn from '../hook/useCn';
 
 export interface ButtonProps
